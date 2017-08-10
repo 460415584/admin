@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+<meta charset="UTF-8" />
+<title>流程</title>
+<link rel="stylesheet" href="./css/bootstrap.min.css" />
+<link rel="stylesheet" href="./css/base.css" />
+<link rel="stylesheet" href="./plugin/tab-iframe/css/tab-iframe.css" />
+</head>
+<body>
+
+<div id="top">
+	<div id="top-title">
+		<a href="javascript: void(0);"><img src="./img/flow.png" alt="项目流程管理"></a>
+	</div>
+	
+	<div id="top-list">
+		<ul class="list-unstyled">
+			<li class="top-list-selected" data-list="list-todo"><a href="javascript: void(0);"><img src="./img/todo.png"> 待办事项</a></li>
+			<li data-list="project-flow"><a href="javascript: void(0);"><img src="./img/project.png"> 项目流程</a></li>
+			<li data-list="time-manage"><a href="javascript: void(0);"><img src="./img/time.png"> 工时管理</a></li>
+			<li><a href="javascript: void(0);"><img src="./img/user.png"> 个人资料</a></li>
+			<li><a href="javascript: void(0);"><img src="./img/netdisk.png"> 云盘</a></li>
+			<li><a href="javascript: void(0);"><img src="./img/system.png"> 设置</a></li>
+			<li><a href="javascript: void(0);"><img src="./img/exit.png"> 退出</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="left">
+
+	<div class="left-item left-item-selected" data-list="list-todo">
+		<h2 style="font-size: 18px;text-indent: 15px;">待办事项</h2>
+		<ul class="slideMenu">
+			<li>
+				<a href="javascript:void(0)">演示示例</a>
+				<ul class="list-unstyled">
+					<li><a href="javascript: void(0);" class="tab-btn" data-url="./project_add.html">新建项目</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div class="left-item" data-list="project-flow">
+		<h2 style="font-size: 18px;text-indent: 15px;">项目流程</h2>
+		<ul class="slideMenu">
+			<li>
+				<a href="javascript:void(0)">演示示例</a>
+				<ul class="list-unstyled">
+					<li><a href="javascript: void(0);" class="tab-btn" data-url="./project_todo.html">待办事项</a></li>
+					<li><a href="javascript: void(0);" class="tab-btn" data-url="./sub_project_add.html">添加子项目</a></li>
+					<li><a href="javascript: void(0);" class="tab-btn" data-url="./sub_project_list.html">子项目列表</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<div class="left-item" data-list="time-manage">
+		<h2 style="font-size: 18px;text-indent: 15px;">工时管理</h2>
+		<ul class="slideMenu">
+			<li>
+				<a href="javascript:void(0)">演示示例</a>
+				<ul class="list-unstyled">
+					<li><a href="javascript: void(0);" class="tab-btn" data-url="./project_add.html">新建项目</a></li>
+					<li><a href="javascript: void(0);" class="tab-btn" data-url="./project_arrang.html">项目安排</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+
+<div id="right">
+
+	<div id="tab-title">
+		<ul class="list-unstyled">
+			<li class="tab-default active">主页</li>
+		</ul>
+	</div>
+
+	<div id="tab-content"><!-- 内容，注意：此容器要按照自己的页面去设置宽高，需要自适应可用绝对定位实现 -->
+		<div class="tab-iframe tab-default active">	<!-- 默认显示 -->
+			<iframe class="iframe" src='./project.html'></iframe>
+		</div>
+	</div>
+
+</div>
+
+
+<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./plugin/tab-iframe/js/tab-iframe.js"></script>
+<script type="text/javascript" src="./plugin/tab-iframe/js/html5_localstorage.js"></script>
+<script type="text/javascript" src="./js/slideMenu.js"></script>
+<script type="text/javascript" src="./js/base.js"></script>
+</body>
+</html>

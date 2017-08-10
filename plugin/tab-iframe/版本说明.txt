@@ -1,0 +1,2 @@
+tab-iframe1.2
+    1、加入刷新恢复历史打开的tab标签功能，用localstorage记录打开的tab标签，刷新的时候读取进行恢复
